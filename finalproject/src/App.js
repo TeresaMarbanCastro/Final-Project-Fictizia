@@ -3,10 +3,11 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
+  Route
 } from "react-router-dom";
 import Login from './Login/Login';
 import Posts from './Posts/Posts';
+import Account from './Account/Account';
 import { Provider } from 'react-redux';
 import configureStore from './configStore';
 
@@ -20,6 +21,9 @@ function App() {
             </Route>
             <Route path="/posts">
               <Posts />
+            </Route>
+            <Route path="/account">
+              <Account />
             </Route>
           </Switch>
       </Router>
